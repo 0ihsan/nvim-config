@@ -1,12 +1,18 @@
-lang en_GB.UTF-8
-
+" ==============================================================================
+" plugin: common/github.com/reedes/vim-wheel/config.vim
 let g:wheel#map#down = '<c-j>'
 let g:wheel#map#up   = '<c-k>'
+
+" ==============================================================================
+" plugin: common/github.com/Raimondi/delimitMate/config.vim
 let g:delimitMate_expand_cr = 2
 let g:delimitMate_expand_space = 1
 au FileType markdown let b:delimitMate_nesting_quotes = ['`']
 au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 au FileType html let b:delimitMate_matchpairs = "(:),[:],{:}" " vim-closetag
+
+" ==============================================================================
+" plugin: common/github.com/tpope/vim-fugitive/config.vim
 aug fugitive
 	ca git Git
 	ca gw  Gwrite
@@ -34,14 +40,26 @@ aug fugitive
 	ca Gc  tab Git commit
 	ca GC  tab Git commit
 aug end
+
+" ==============================================================================
+" plugin: common/github.com/HiPhish/info.vim/config.vim
 aug InfoFileType
 	au FileType info nm <silent> <buffer> <space> :Follow<cr>
 aug end
+
+" ==============================================================================
+" plugin: common/github.com/chrisbra/Colorizer/config.vim
 nn ch :ColorHighlight<cr>
 au WinEnter *.css ColorHighlight<cr>
 let g:colorizer_disable_bufleave = 1
+
+" ==============================================================================
+" plugin: common/github.com/mhinz/vim-sayonara/config.vim
 nn <silent><m-k> :Sayonara!<cr>
 tma <silent> <m-k> <c-\><c-n>:Sayonara!<cr>
+
+" ==============================================================================
+" plugin: common/github.com/gelguy/wilder.nvim/config.vim
 call wilder#set_option('renderer', wilder#popupmenu_renderer({
       \ 'highlighter': wilder#basic_highlighter(),
       \ 'max_height': '20%',
@@ -52,7 +70,6 @@ call wilder#set_option('renderer', wilder#popupmenu_renderer({
       \   ' ', wilder#popupmenu_scrollbar(),
       \ ],
       \ }))
-
 call wilder#set_option('pipeline', [
       \   wilder#branch(
       \     [
@@ -68,7 +85,6 @@ call wilder#set_option('pipeline', [
       \     }),
       \   ),
       \ ])
-
 " list/array does not work for `next_key`. it takes only the first element into
 " account.
 call wilder#setup({
@@ -76,41 +92,72 @@ call wilder#setup({
       \ 'next_key': ['<Tab>', '<c-n>'],
       \ 'previous_key': ['<S-Tab>', '<c-p>'],
       \ })
+
+" ==============================================================================
+" plugin: common/github.com/LnL7/vim-nix/config.vim
 let nix_recommended_style = 0
+
+" ==============================================================================
+" plugin: common/github.com/0ihsan/everforest/config.vim
 let g:everforest_enable_italic = 1
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_transparent_background = 1
+
+" ==============================================================================
+" plugin: common/github.com/0ihsan/vim-auto-dark-light/config.vim
 let g:auto_dark_light_dark_theme = 'nightfox'
 let g:auto_dark_light_dark_tgc    = 1
-
 let g:auto_dark_light_light_theme = 'dawnfox'
 let g:auto_dark_light_light_tgc   = 1
+
+" ==============================================================================
+" plugin: common/github.com/ziman/ledger-vim/config.vim
 au FileType ledger nm <silent><tab> :set ep=ledger\ -f\ -\ print<cr>=
 au FileType ledger xn <silent><tab> :<c-u>set ep=ledger\ -f\ -\ print<cr>gv=
 au FileType ledger se commentstring=;\ %s
+
+" ==============================================================================
+" plugin: common/github.com/junegunn/vim-easy-align/config.vim
 xm ga <Plug>(EasyAlign)
 nm ga <Plug>(EasyAlign)
-let g:limelight_default_coefficient = 0.8
 
+" ==============================================================================
+" plugin: common/github.com/junegunn/limelight.vim/config.vim
+let g:limelight_default_coefficient = 0.8
 nm <m-l> :Limelight!!<cr>
 xm <m-l> <Plug>(Limelight)
 
+
+" ==============================================================================
+" plugin: common/github.com/metakirby5/codi.vim/config.vim
 let g:codi#interpreters = {
 \   'python': {
 \       'bin': 'python3',
 \       'prompt': '^\(>>>\|\.\.\.\) ',
 \       },
 \   }
+
+" ==============================================================================
+" plugin: common/github.com/dense-analysis/ale/config.vim
 let g:ale_cpp_cc_executable = 'g++-11'
 let g:ale_cpp_cc_options    = '-std=c++20 -Wall'
-
 let g:ale_c_clang_options   = '-I/opt/homebrew/include -L/opt/homebrew/lib -I$HOME/include'
 let g:ale_cpp_clang_options = '-I/opt/homebrew/include -L/opt/homebrew/lib -I$HOME/include'
 
+" ==============================================================================
+" plugin: vim/github.com/luochen1990/rainbow/config.vim
+let g:rainbow_active = 1
 
+" ==============================================================================
 if has('nvim-0.5')
+
+" ==============================================================================
+" plugin: nvim/github.com/nvim-treesitter/nvim-treesitter/config.vim
 " :TSInstall markdown
+
+" ==============================================================================
+" plugin: nvim/github.com/hrsh7th/nvim-compe/config.vim
 let g:compe                  = {}
 let g:compe.autocomplete     = v:true
 let g:compe.debug            = v:false
@@ -135,6 +182,9 @@ let g:compe.source.ultisnips = v:false
 let g:compe.source.vsnip     = v:false
 let g:compe.source_timeout   = 200
 let g:compe.throttle_time    = 10
+
+" ==============================================================================
+" plugin: nvim/github.com/ibhagwan/fzf-lua/config.vim
 command Rg :FzfLua live_grep_native
 nm <m-f> :FzfLua files<cr>
 nm <m-s> :FzfLua blines<cr>
@@ -142,6 +192,9 @@ nm <m-b> :FzfLua buffers<cr>
 nm <m-r> :FzfLua oldfiles<cr>
 nm <m-h> :FzfLua help_tags<cr>
 tma <m-r> <c-\><c-n>:FzfLua oldfiles<cr>
+
+" ==============================================================================
+" plugin: nvim/github.com/neovim/nvim-lspconfig/config.vim
 set completeopt=menuone,noselect
 nn <silent> <c-tab>   <cmd>lua vim.lsp.buf.formatting()<cr>
 nn <silent> <space>rn <cmd>lua vim.lsp.buf.rename()<cr>
@@ -156,10 +209,11 @@ nn <silent> gls       <cmd>lua vim.lsp.buf.signature_help()<cr>
 nn <silent> glt       <cmd>lua vim.lsp.buf.type_definition()<cr>
 xn <silent> <c-tab>   :lua vim.lsp.buf.range_formatting()<cr>
 
+" ==============================================================================
+" lsp
 lua <<EOF
 -- disable diagnostcs globally
 vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
-
 require'lspconfig'.clangd.setup{ cmd = { "clangd" } }
 -- require'lspconfig'.eslint.setup{}
 require'lspconfig'.flow.setup{}
@@ -169,7 +223,6 @@ require'lspconfig'.gopls.setup{}
 -- require'lspconfig'.rls.setup{}
 -- require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.sourcekit.setup{cmd={"xcrun","sourcekit-lsp"}}
-
 require'nvim-treesitter.configs'.setup {
 	ensure_installed = "maintained",
 	rainbow = {
@@ -182,51 +235,7 @@ require'nvim-treesitter.configs'.setup {
 		disable = { "ledger" },
 	},
 }
-
 EOF
-
-else
-let g:rainbow_active = 1
-nm <m-f> :Files<cr>
-nm <m-s> :BLines<cr>
-nm <m-b> :Buffers<cr>
-nm <m-r> :History<cr>
-nm <m-h> :Helptags!<cr>
-tma <m-r> <c-\><c-n>:History<cr>
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-l> <plug>(fzf-complete-buffer-line)
-" nm <silent> <m-2> :call fzf#run({'sink': 'e', 'left': '30%'})<cr>
-
-let g:fzf_layout = { 'down': '~40%' }
-let g:fzf_preview_window = []
-let g:fzf_commands_expect = 'alt-enter'
-let g:fzf_colors = {
-	\ 'fg':      ['fg', 'Normal'],
-	\ 'bg':      ['bg', 'Normal'],
-	\ 'hl':      ['fg', 'Comment'],
-	\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-	\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-	\ 'hl+':     ['fg', 'Statement'],
-	\ 'info':    ['fg', 'PreProc'],
-	\ 'border':  ['fg', 'Ignore'],
-	\ 'prompt':  ['fg', 'Conditional'],
-	\ 'pointer': ['fg', 'Exception'],
-	\ 'marker':  ['fg', 'Keyword'],
-	\ 'spinner': ['fg', 'Label'],
-	\ 'header':  ['fg', 'Comment']
-\}
-
-func! Dirname(key, val)
-	return fnamemodify(a:val, ":h")
-endf
-
-func! OldDirs() " (unique dirs)
-	call fzf#run(fzf#wrap({'sink':'tcd',
-		\ 'source':uniq(sort(map(deepcopy(v:oldfiles), function('Dirname'))))}),
-	\ {'options': [ '--prompt', 'Recent Dirs' ]})
-endf
-
-nm <silent> <m-d> :call OldDirs()<cr>
 
 end
 
