@@ -1,0 +1,141 @@
+[submodule "pack/appearance/start/vim-css-color"]
+	path = pack/appearance/start/vim-css-color
+	url = https://github.com/ap/vim-css-color
+[submodule "pack/appearance/start/vim-auto-dark-light"]
+	path = pack/appearance/start/vim-auto-dark-light
+	url = https://github.com/0ihsan/vim-auto-dark-light
+[submodule "pack/appearance/start/termpp.vim"]
+	path = pack/appearance/start/termpp.vim
+	url = https://github.com/0ihsan/termpp.vim
+[submodule "pack/appearance/start/nvim-treesitter"]
+	path = pack/appearance/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/appearance/start/tabline.vim"]
+	path = pack/appearance/start/tabline.vim
+	url = https://github.com/mkitt/tabline.vim
+[submodule "pack/appearance/start/nightfox.nvim"]
+	path = pack/appearance/start/nightfox.nvim
+	url = https://github.com/EdenEast/nightfox.nvim
+[submodule "pack/appearance/start/netrwpp.vim"]
+	path = pack/appearance/start/netrwpp.vim
+	url = https://github.com/0ihsan/netrwpp.vim
+[submodule "pack/appearance/start/nerdfont.vim"]
+	path = pack/appearance/start/nerdfont.vim
+	url = https://github.com/lambdalisue/nerdfont.vim
+[submodule "pack/appearance/start/Colorizer"]
+	path = pack/appearance/start/Colorizer
+	url = https://github.com/chrisbra/Colorizer
+[submodule "pack/appearance/start/limelight.vim"]
+	path = pack/appearance/start/limelight.vim
+	url = https://github.com/junegunn/limelight.vim
+[submodule "pack/utility/start/zoxide.vim"]
+	path = pack/utility/start/zoxide.vim
+	url = https://github.com/0ihsan/zoxide.vim
+[submodule "pack/utility/start/wilder.nvim"]
+	path = pack/utility/start/wilder.nvim
+	url = https://github.com/gelguy/wilder.nvim
+[submodule "pack/utility/start/vim-speeddating"]
+	path = pack/utility/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule "pack/utility/start/vim-sayonara"]
+	path = pack/utility/start/vim-sayonara
+	url = https://github.com/mhinz/vim-sayonara
+[submodule "pack/utility/start/vim-quickrun"]
+	path = pack/utility/start/vim-quickrun
+	url = https://github.com/thinca/vim-quickrun
+[submodule "pack/utility/start/vim-lastplace"]
+	path = pack/utility/start/vim-lastplace
+	url = https://github.com/farmergreg/vim-lastplace
+[submodule "pack/utility/start/vim-ihsensible"]
+	path = pack/utility/start/vim-ihsensible
+	url = https://github.com/0ihsan/vim-ihsensible
+[submodule "pack/utility/start/vim-gitgutter"]
+	path = pack/utility/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/utility/start/vim-fugitive"]
+	path = pack/utility/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/utility/start/vim-gf"]
+	path = pack/utility/start/vim-gf
+	url = https://github.com/0ihsan/vim-gf
+[submodule "pack/utility/start/vim-easy-align"]
+	path = pack/utility/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
+[submodule "pack/utility/start/vim-closetag"]
+	path = pack/utility/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag
+[submodule "pack/utility/start/targets.vim"]
+	path = pack/utility/start/targets.vim
+	url = https://github.com/wellle/targets.vim
+[submodule "pack/utility/start/nvim-luapad"]
+	path = pack/utility/start/nvim-luapad
+	url = https://github.com/rafcamlet/nvim-luapad
+[submodule "pack/utility/start/nvim-lspconfig"]
+	path = pack/utility/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/utility/start/nvim-compe"]
+	path = pack/utility/start/nvim-compe
+	url = https://github.com/hrsh7th/nvim-compe
+[submodule "pack/utility/start/kommentary"]
+	path = pack/utility/start/kommentary
+	url = https://github.com/b3nj5m1n/kommentary
+[submodule "pack/utility/start/fzf-lua"]
+	path = pack/utility/start/fzf-lua
+	url = https://github.com/ibhagwan/fzf-lua
+[submodule "pack/utility/start/delimitMate"]
+	path = pack/utility/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate
+[submodule "pack/utility/start/codi.vim"]
+	path = pack/utility/start/codi.vim
+	url = https://github.com/metakirby5/codi.vim
+[submodule "pack/keybinding/start/vim-wheel"]
+	path = pack/keybinding/start/vim-wheel
+	url = https://github.com/reedes/vim-wheel
+[submodule "pack/utility/start/ale"]
+	path = pack/utility/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "pack/keybinding/start/vim-grave-navigation"]
+	path = pack/keybinding/start/vim-grave-navigation
+	url = https://github.com/0ihsan/vim-grave-navigation
+[submodule "pack/keybinding/start/vim-surround"]
+	path = pack/keybinding/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/keybinding/start/key.vim"]
+	path = pack/keybinding/start/key.vim
+	url = https://github.com/0ihsan/key.vim
+[submodule "pack/keybinding/start/vim-rsi"]
+	path = pack/keybinding/start/vim-rsi
+	url = https://github.com/tpope/vim-rsi
+[submodule "pack/filetype/start/vim-qkdb-syntax"]
+	path = pack/filetype/start/vim-qkdb-syntax
+	url = https://github.com/katusk/vim-qkdb-syntax
+[submodule "pack/filetype/start/vim-pine-script"]
+	path = pack/filetype/start/vim-pine-script
+	url = https://github.com/jbmorgado/vim-pine-script
+[submodule "pack/filetype/start/vim-plist"]
+	path = pack/filetype/start/vim-plist
+	url = https://github.com/darfink/vim-plist
+[submodule "pack/filetype/start/swift.vim"]
+	path = pack/filetype/start/swift.vim
+	url = https://github.com/keith/swift.vim
+[submodule "pack/filetype/start/ledger-vim"]
+	path = pack/filetype/start/ledger-vim
+	url = https://github.com/ziman/ledger-vim
+[submodule "pack/filetype/start/jq.vim"]
+	path = pack/filetype/start/jq.vim
+	url = https://github.com/vito-c/jq.vim
+[submodule "pack/filetype/start/vim-solidity"]
+	path = pack/filetype/start/vim-solidity
+	url = https://github.com/tomlion/vim-solidity
+[submodule "pack/filetype/start/id3.vim"]
+	path = pack/filetype/start/id3.vim
+	url = https://github.com/AndrewRadev/id3.vim
+[submodule "pack/filetype/start/nim.vim"]
+	path = pack/filetype/start/nim.vim
+	url = https://github.com/zah/nim.vim
+[submodule "pack/filetype/start/vim-nix"]
+	path = pack/filetype/start/vim-nix
+	url = https://github.com/LnL7/vim-nix
+[submodule "pack/filetype/start/info.vim"]
+	path = pack/filetype/start/info.vim
+	url = https://github.com/HiPhish/info.vim
