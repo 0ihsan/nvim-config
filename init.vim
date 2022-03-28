@@ -1,3 +1,5 @@
+let g:loaded_python3_provider = 0
+
 " ==============================================================================
 " plugin: common/github.com/reedes/vim-wheel/config.vim
 let g:wheel#map#down = '<c-j>'
