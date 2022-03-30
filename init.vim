@@ -1,4 +1,5 @@
 let g:loaded_python3_provider = 0
+let mapleader = "\<space>"
 
 " ==============================================================================
 " plugin: common/github.com/reedes/vim-wheel/config.vim
